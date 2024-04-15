@@ -48,7 +48,7 @@
                             <p class="card-text">{{ $plant->description }}</p>
                             <p class="card-text"><strong>Precio por Lote:</strong> {{ $plant->price_per_lot }}</p>
                         </div>
-                        <a href="#" class="btn btn-primary ver-detalles-btn">Ver Detalles</a>
+                        <a href="{{ route('plantas.show', $plant->id) }}" class="btn btn-primary ver-detalles-btn">Ver Detalles</a>
                     </div>
                 </div>
             @endforeach

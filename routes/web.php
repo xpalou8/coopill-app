@@ -11,4 +11,4 @@ Route::get('/', function () {
 
 Route::get('road-map/{id}/tasks', 'RoadMapController@showTasks')->name('roadmap.tasks');
 
-
+Route::get('/plantas/{id}', [PlantController::class, 'show'])->name('plantas.show');

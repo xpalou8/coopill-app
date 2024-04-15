@@ -13,6 +13,12 @@ class PlantController extends Controller
         $plants = Plant::all();
         return view('plantas.index', compact('plants'));
     }
+
+    public function show($id)
+    {
+        $plant = Plant::findOrFail($id);
+        return view('plantas.show', compact('plant'));
+    }
 }
 
 
