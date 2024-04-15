@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\PlantRequest;
+use App\Http\Requests\ServiceRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class PlantCrudController
+ * Class ServiceCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class PlantCrudController extends CrudController
+class ServiceCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -26,9 +26,9 @@ class PlantCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\Plant::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/plant');
-        CRUD::setEntityNameStrings('plant', 'plants');
+        CRUD::setModel(\App\Models\Service::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/service');
+        CRUD::setEntityNameStrings('service', 'services');
     }
 
     /**
