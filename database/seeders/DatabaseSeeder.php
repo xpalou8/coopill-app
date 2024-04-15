@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             AdminUsersSeeder::class,
             TasksSeeder::class,
             RoadMapsSeeder::class,
+            PlantsSeeder::class
         ]);
     }
 }
