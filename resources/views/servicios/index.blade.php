@@ -26,7 +26,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $service->name }}</h5>
                             <p class="card-text">{{ $service->description }}</p>
-                            <p class="card-text"><strong>Precio por Lote:</strong> {{ $service->price_hour}}</p>
+                            <p class="card-text"><strong>Precio por Lote:</strong> {{ $service->price_hour}}€</p>
                         </div>
                         <a href="{{ route('servicios.show', $service->id) }}" class="btn btn-success ver-detalles-btn">Ver Detalles</a>
                     </div>
