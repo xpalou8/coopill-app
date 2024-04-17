@@ -14,21 +14,21 @@
         <div class="row mt-5 mb-5"> <!-- Margen arriba y abajo -->
             <div class="col-md-6 mx-auto mt-5 mb-5 text-center"> <!-- Centrado -->
                 <div class="h4 bg-success text-white p-3 rounded-pill titulo-div"> <!-- Esquinas curvadas y fondo azul -->
-                    Listado de Plantas
+                    Listado de Servicios
                 </div>
             </div>
         </div>
         <div class="row">
-            @foreach ($plants as $plant)
+            @foreach ($services as $service)
                 <div class="col-md-4 mb-4">
                     <div class="card position-relative">
-                        <img src="{{ asset('storage/images/' . $plant->img) }}" class="card-img-top card-img" alt="{{ $plant->namenpm }}">
+                        <img src="{{ asset('storage/images/' . $service->img) }}" class="card-img-top card-img" alt="{{ $service->name }}">
                         <div class="card-body">
-                            <h5 class="card-title">{{ $plant->name }}</h5>
-                            <p class="card-text">{{ $plant->description }}</p>
-                            <p class="card-text"><strong>Precio por Lote:</strong> {{ $plant->price_per_lot }}</p>
+                            <h5 class="card-title">{{ $service->name }}</h5>
+                            <p class="card-text">{{ $service->description }}</p>
+                            <p class="card-text"><strong>Precio por Lote:</strong> {{ $service->price_hour}}</p>
                         </div>
-                        <a href="{{ route('plantas.show', $plant->id) }}" class="btn btn-success ver-detalles-btn">Ver Detalles</a>
+                        <a href="{{ route('servicios.show', $service->id) }}" class="btn btn-success ver-detalles-btn">Ver Detalles</a>
                     </div>
                 </div>
             @endforeach

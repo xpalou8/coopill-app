@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(to bottom, #ffffff, #a3f39b);
+    background-attachment: fixed;
+}
+
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.plant-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-top: 25px
+}
+
+.price-text {
+    font-size: 20px;
+}
+
+.btn-return {
+    margin-top: 20px;
+}
+
+.card-img-top {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
