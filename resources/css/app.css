@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to bottom, #ffffff, #a3f39b);
+    background-attachment: fixed;
+}
+
+
+.card {
+    background-color: #fff;
+    /* Color de fondo de las cards */
+    border-radius: 15px;
+    /* Esquinas curvadas */
+    position: relative;
+    /* Posición relativa para el botón */
+    text-align: center;
+    /* Centrar el contenido */
+    padding: 20px;
+    /* Añadir espacio interno */
+}
+
+.plant-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Espacio entre la imagen y el texto */
+}
+
+.card-title {
+    font-size: 24px;
+    /* Tamaño de fuente más grande */
+    font-weight: bold;
+    /* Negrita */
+}
+
+.card-text {
+    margin-top: 25px
+}
+
+.price-text {
+    font-size: 20px;
+    /* Tamaño de fuente más grande */
+}
+
+.btn-return {
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
+.card-img-top {
+    max-width: 30%;
+    /* Adjust the percentage as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Espacio entre la imagen y el texto */
+}

@@ -6,29 +6,6 @@
     <title>Listado de Plantas</title>
     <!-- Incluir Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Estilo para colorear el fondo y las card */
-        body {
-            background-color: #f0f0f0; /* Color de fondo */
-        }
-
-        .card {
-            background-color: #fff; /* Color de fondo de las cards */
-            border-radius: 15px; /* Esquinas curvadas */
-            position: relative; /* Posición relativa para el botón */
-        }
-
-        .ver-detalles-btn {
-            position: absolute;
-            bottom: 15px;
-            right: 15px;
-        }
-
-        .titulo-div {
-            width: 50%; /* Anchura reducida */
-            margin: 0 auto; /* Centrado horizontalmente */
-        }
-    </style>
 </head>
 <body>
     <div class="container">

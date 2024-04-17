@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlantController;
+use App\Http\Controllers\ServiceController;
+
+Route::get('/listaservicios', [ServiceController::class, 'index']);
 
 Route::get('/listaplantas', [PlantController::class, 'index']);
 
