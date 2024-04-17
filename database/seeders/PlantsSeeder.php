@@ -13,8 +13,8 @@ class PlantsSeeder extends Seeder
      */
     public function run(): void
     {
-        Plant::create(['name' => 'Tomatiguera', 'description' => 'Entre agost i octubre', 'price_per_lot' => '7.25']);
-        Plant::create(['name' => 'Taronger', 'description' => 'Entre octubre i Junio','price_per_lot' => '40']);
-        Plant::create(['name' => 'Amapola', 'description' => 'Abril i Septempre', 'price_per_lot' => '5']);
+        Plant::create(['name' => 'Tomatiguera', 'description' => 'Entre agost i octubre', 'price_per_lot' => '7.25', 'img' => 'tomatiguera.jpg']);
+        Plant::create(['name' => 'Taronger', 'description' => 'Entre octubre i Junio','price_per_lot' => '40','img' => 'naranjo.jpg']);
+        Plant::create(['name' => 'Amapola', 'description' => 'Abril i Septempre', 'price_per_lot' => '5','img' => 'amapola.png']);
     }
 }
