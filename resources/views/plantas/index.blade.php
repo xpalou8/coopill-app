@@ -7,10 +7,12 @@
     <!-- Incluir Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     @vite(['resources/css/app.css'])
+    @vite(['resources/css/header.css'])
 
 </head>
 <body>
     <div class="container">
+        @include('header')
         <div class="row mt-5 mb-5"> <!-- Margen arriba y abajo -->
             <div class="col-md-6 mx-auto mt-5 mb-5 text-center"> <!-- Centrado -->
                 <div class="h4 bg-success text-white p-3 rounded-pill titulo-div"> <!-- Esquinas curvadas y fondo azul -->

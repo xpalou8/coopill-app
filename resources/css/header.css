@@ -12,8 +12,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #171717;
-  color: #f2f2f2;
+  color: #010000; 
   font-family: "Montserrat", sans-serif;
+}
+
+.black{
+  color: #010000;
 }
 
 a,
