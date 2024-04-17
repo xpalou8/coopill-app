@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->decimal('price_per_lot');
+            $table->string('img');
         });
     }
 

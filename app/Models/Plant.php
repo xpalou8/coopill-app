@@ -14,6 +14,7 @@ class Plant extends Model
     protected $fillable = [
         'name',
         'description',
-        'price_per_lot'
+        'price_per_lot',
+        'img'
     ];
 }
