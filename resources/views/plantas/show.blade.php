@@ -10,9 +10,10 @@
     <style>
         /* Estilo para colorear el fondo y las card */
         body {
-            background-color: #f0f0f0;
-            /* Color de fondo */
+            background: linear-gradient(to bottom, #ffffff, #a3f39b);
+            background-attachment: fixed;
         }
+
 
         .card {
             background-color: #fff;
@@ -55,6 +56,15 @@
             margin-top: 20px;
             /* Espacio superior */
         }
+
+        .card-img-top {
+            max-width: 30%;
+            /* Adjust the percentage as needed */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            /* Espacio entre la imagen y el texto */
+        }
     </style>
 </head>
 
@@ -64,8 +74,9 @@
             <div class="card-body">
                 <h5 class="card-title">{{ $plant->name }}</h5>
                 <p class="card-text">{{ $plant->description }}</p>
-                <img src="coopill-app/public/storage/{{ $plant->img }}" class="plant-image" alt="Imagen de la planta">
-                <p class="price-text"><strong>Precio por Lote:</strong> {{ $plant->price_per_lot }}</p>
+                <img src="{{ asset('storage/images/' . $plant->img) }}" class="card-img-top card-img"
+                    alt="{{ $plant->namenpm }}">
+                <p class="price-text"><strong>Precio por Lote:</strong> {{ $plant->price_per_lot }}€</p>
                 <!-- Botón de regreso al listado de plantas -->
                 <a href="{{ url('/listaplantas') }}" class="btn btn-success btn-return">Volver al Listado de Plantas</a>
             </div>
