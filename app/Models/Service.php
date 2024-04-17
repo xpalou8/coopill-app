@@ -15,5 +15,6 @@ class Service extends Model
         'name',
         'description',
         'price_hour',
+        'img'
     ];
 }

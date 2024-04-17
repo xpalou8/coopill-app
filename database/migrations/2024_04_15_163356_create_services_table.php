@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->decimal('price_hour', 8, 2); // Adjust the precision and scale as needed
+            $table->string('img');
         });
     }
 
