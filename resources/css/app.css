@@ -1,0 +1,29 @@
+ /* Estilo para colorear el fondo y las card */
+ body {
+    background: linear-gradient(to bottom, #f0f3f2, #009933);
+    background-attachment: fixed;
+}
+
+.card {
+    background-color: #a8bda7 ; /* Color de fondo de las cards */
+    border-radius: 15px; /* Esquinas curvadas */
+    position: relative; /* Posición relativa para el botón */
+}
+
+.ver-detalles-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.titulo-div {
+    width: 50%; /* Anchura reducida */
+    margin: 0 auto; /* Centrado horizontalmente */
+}
+
+.card-img {
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor */
+    border-top-left-radius: 15px; /* Esquinas curvadas en la parte superior izquierda */
+    border-top-right-radius: 15px; /* Esquinas curvadas en la parte superior derecha */
+}

@@ -16,5 +16,6 @@ class TasksSeeder extends Seeder
         Task::create(['description' => 'Task 1', 'status' => 'pending']);
         Task::create(['description' => 'Task 2', 'status' => 'completed']);
         Task::create(['description' => 'Task 3', 'status' => 'pending']);
+        
     }
 }
