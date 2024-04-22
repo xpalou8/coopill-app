@@ -18,7 +18,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ $plant->name }}</h5>
                 <p class="card-text">{{ $plant->description }}</p>
-                <img src="{{ asset('storage/images/' . $plant->img) }}" class="card-img-top card-img"
+                <img src="{{ asset('/images/' . $plant->img) }}" class="card-img-top card-img"
                     alt="{{ $plant->namenpm }}">
                 <p class="price-text"><strong>Precio por Lote:</strong> {{ $plant->price_per_lot }}€</p>
                 <!-- Botón de regreso al listado de plantas -->
