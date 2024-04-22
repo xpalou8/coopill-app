@@ -1,0 +1,19 @@
+.task-container {
+    height: 500px;
+}
+
+.task {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #b8b8b8 !important;
+    border-radius: 0.9rem !important;
+}
+
+.task-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

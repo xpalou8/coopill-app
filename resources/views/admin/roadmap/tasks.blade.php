@@ -1,5 +1,7 @@
 @extends(backpack_view('blank'))
 
+@vite(['resources/css/admin/index.css'])
+
 @php
     $defaultBreadcrumbs = [
       trans('backpack::crud.admin') => url(config('backpack.base.route_prefix'), 'dashboard'),
@@ -50,10 +52,16 @@
 		</div>
 	@endif
 		@if($crud->tabsEnabled() && count($crud->getUniqueTabNames('columns')))
-			@include('crud::inc.show_tabbed_table')
+			@include('admin.tasks.task')
+			{{-- @include('crud::inc.show_tabbed_table') --}}
 		@else
 			<div class="card no-padding no-border mb-0">
-				@include('crud::inc.show_table', ['columns' => $crud->columns()])
+				<div class="row g-0">
+					@foreach($tasks as $task)
+						@include('admin.tasks.task', ['task' => $task])
+					@endforeach
+				</div>
+				{{-- @include('crud::inc.show_table', ['columns' => $crud->columns()]) --}}
 			</div>
 		@endif
 	</div>
