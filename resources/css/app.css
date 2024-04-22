@@ -22,12 +22,6 @@ body {
 }
 
 .card {
-     ; /* Color de fondo de las cards */
-    border-radius: 15px; /* Esquinas curvadas */
-    position: relative; /* Posición relativa para el botón */
-}
-
-.card {
     background-color: #a8bda7;
     /* Color de fondo de las cards */
     border-radius: 15px;
