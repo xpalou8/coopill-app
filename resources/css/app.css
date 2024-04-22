@@ -1,13 +1,70 @@
- /* Estilo para colorear el fondo y las card */
- body {
-    background: linear-gradient(to bottom, #f0f3f2, #009933);
+body {
+    background: linear-gradient(to bottom, #ffffff, #a3f39b);
     background-attachment: fixed;
 }
 
+.plant-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Espacio entre la imagen y el texto */
+}
+
+.price-text {
+    font-size: 20px;
+    /* Tamaño de fuente más grande */
+}
+
+.btn-return {
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
 .card {
-    background-color: #a8bda7 ; /* Color de fondo de las cards */
+     ; /* Color de fondo de las cards */
     border-radius: 15px; /* Esquinas curvadas */
     position: relative; /* Posición relativa para el botón */
+}
+
+.card {
+    background-color: #a8bda7;
+    /* Color de fondo de las cards */
+    border-radius: 15px;
+    /* Esquinas curvadas */
+    position: relative;
+    /* Posición relativa para el botón */
+    text-align: center;
+    /* Centrar el contenido */
+    padding: 20px;
+    /* Añadir espacio interno */
+}
+
+.card-title {
+    font-size: 24px;
+    /* Tamaño de fuente más grande */
+    font-weight: bold;
+    /* Negrita */
+}
+
+.card-text {
+    margin-top: 25px
+}
+
+.card-img {
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor */
+    border-top-left-radius: 15px; /* Esquinas curvadas en la parte superior izquierda */
+    border-top-right-radius: 15px; /* Esquinas curvadas en la parte superior derecha */
+}
+
+.card-img-top {
+    max-width: 30%;
+    /* Adjust the percentage as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Espacio entre la imagen y el texto */
 }
 
 .ver-detalles-btn {
@@ -19,11 +76,4 @@
 .titulo-div {
     width: 50%; /* Anchura reducida */
     margin: 0 auto; /* Centrado horizontalmente */
-}
-
-.card-img {
-    height: 200px; /* Altura de la imagen */
-    object-fit: cover; /* Ajustar la imagen dentro del contenedor */
-    border-top-left-radius: 15px; /* Esquinas curvadas en la parte superior izquierda */
-    border-top-right-radius: 15px; /* Esquinas curvadas en la parte superior derecha */
 }
